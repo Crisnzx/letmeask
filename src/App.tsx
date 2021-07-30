@@ -1,6 +1,14 @@
+import React from 'react';
+import { Button } from './components/Button';
+
 function App() {
    return (
-      <h1>Hello World</h1>
+      <React.Fragment>
+         <Button text="Bottao" />
+         <Button />
+         <Button />
+         <Button />
+      </React.Fragment>
    );
 }
 
