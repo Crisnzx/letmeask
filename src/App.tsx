@@ -1,13 +1,11 @@
 import React from 'react';
-import { Button } from './components/Button';
+import { Home } from './pages/Home';
+import './styles/global.scss';
 
 function App() {
    return (
       <React.Fragment>
-         <Button text="Bottao" />
-         <Button />
-         <Button />
-         <Button />
+         <Home />
       </React.Fragment>
    );
 }
