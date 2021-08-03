@@ -66,7 +66,6 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
         avatar: photoURL
       });
     }
-
   }
 
   return (
