@@ -45,6 +45,12 @@ export function Home() {
       setRoomCode('');
       return;
     }
+
+    if (roomRef.val().closedAt) {
+      alert('Essa sala já foi encerrada');
+      return;
+    }
+
     history.push(`/rooms/${roomCode}`);
 
   }
