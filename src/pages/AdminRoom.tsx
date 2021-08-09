@@ -70,17 +70,19 @@ export function AdminRoom() {
     <div id="page-room">
       <header>
         <div className="content">
-          <img src={logoIMG} alt="Letmeask" />
+          <img onClick={() => { history.push('/') }} src={logoIMG} alt="Letmeask" />
           <div>
             <RoomCode code={roomID} />
-            <Button className="button outlined" onClick={handleCloseRoom} >Encerrar Sala</Button>
           </div>
         </div>
       </header>
       <main>
         <div className="room-title">
-          <h1>Sala {title}</h1>
-          {questions.length > 0 && <span>{questions.length} {text}</span>}
+          <div>
+            <h1>Sala {title}</h1>
+            {questions.length > 0 && <span>{questions.length} {text}</span>}
+          </div>
+          <Button className="button outlined" onClick={handleCloseRoom} >Encerrar Sala</Button>
         </div>
         <div id="questions">
           {questions.map((question) => {

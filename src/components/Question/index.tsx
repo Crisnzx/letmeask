@@ -16,20 +16,6 @@ type QuestionProps = {
 
 export function Question({ content, author, children, isHighlighted = false, isAnswered = false }: QuestionProps) {
 
-  let classes = '';
-
-  if (isHighlighted && isAnswered) {
-    classes = 'answered';
-
-  } else {
-    if (isAnswered) {
-      classes = 'answered';
-    }
-    if (isHighlighted) {
-      classes = 'highlighted';
-    }
-  }
-
   return (
     <div className={cx('question', {
       answered: isAnswered,
